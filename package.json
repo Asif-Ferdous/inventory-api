@@ -1,0 +1,27 @@
+{
+  "name": "inventory-api",
+  "version": "1.0.0",
+  "description": "REST API for inventory management, built with Express and TypeScript",
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "lint": "eslint . --ext .ts"
+  },
+  "keywords": ["express", "typescript", "rest-api", "sqlite"],
+  "author": "Asif Ferdous",
+  "license": "MIT",
+  "dependencies": {
+    "better-sqlite3": "^11.3.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.11",
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.5.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.5.4"
+  }
+}
